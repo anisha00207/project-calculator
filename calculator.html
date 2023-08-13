@@ -1,0 +1,44 @@
+<!DOCTYPE html>  
+<html>  
+  
+<head>  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>  
+<body>  
+  <h2>.....................................CALCULATOR...........................................</h2>  
+  <form name="cal" class="form">  
+    <table border="10">  
+      <tr>  
+        <td colspan="4">  
+          <input type="text" name="display" id="m" value="" readonly placeholder="write a number">  
+        </td>  
+      </tr>  
+      <tr>  
+        <td><input type="button" value="0" onClick="cal.display.value += '0'"></td>  
+        <td><input type="button" value="1" onClick="cal.display.value += '1'"></td>  
+        <td><input type="button" value="2" onClick="cal.display.value += '2'"></td>  
+        <td><input type="button" class="operator" name="plus" value="+" onClick="cal.display.value += '+'"></td>  
+      </tr>  
+      <tr>  
+        <td><input type="button" value="3" onClick="cal.display.value += '3'"></td>  
+        <td><input type="button" value="4" onClick="cal.display.value += '4'"></td>  
+        <td><input type="button" value="5" onClick="cal.display.value += '5'"></td>  
+        <td><input type="button" class="operator" name="minus" value="-" onClick="cal.display.value += '-'"></td>  
+      </tr>  
+      <tr>  
+        <td><input type="button" value="6" onClick="cal.display.value += '6'"></td>  
+        <td><input type="button" value="7" onClick="cal.display.value += '7'"></td>  
+        <td><input type="button" value="8" onClick="cal.display.value += '8'"></td>  
+        <td><input type="button" class="operator" name="times" value="*" onClick="cal.display.value += '*'"></td>  
+      </tr>  
+      <tr>  
+        <td><input type="button" value="9" onClick="cal.display.value += '9'"></td>  
+        <td><input type="button" id="clear" name="clear" value="c" onClick="cal.display.value = ''"></td>  
+        <td><input type="button" class="operator" name="equal" value="=" onClick="cal.display.value = eval(cal.display.value)"></td>  
+        <td><input type="button" class="operator" name="div" value="/" onClick="cal.display.value += '/'"></td>  
+      </tr> 
+    </table>  
+  </form>  
+</body>  
+</html>
